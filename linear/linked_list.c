@@ -45,3 +45,10 @@ int MIN(node *head){
     }
     return min;
 }
+
+void show(node *head) {
+    while(head != NULL) {
+      printf("%i\n", head->data);
+      head = head->next;
+    }
+}
