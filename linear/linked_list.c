@@ -46,7 +46,7 @@ int MIN(node *head){
     return min;
 }
 
-void print(node *head) {
+void print_forward(node *head) {
     while(head != NULL) {
       printf("%i\n", head->data);
       head = head->next;
