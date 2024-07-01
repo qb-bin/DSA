@@ -58,9 +58,16 @@ int min(node *head){
     return min;
 }
 
-void print(node *head) {
+void print_forward(node *head) {
     while(head != NULL) {
       printf("%i\n", head->data);
       head = head->next;
+    }
+}
+
+void print_backward(node *tail) {
+    while (tail != NULL) {
+        printf("%i\n", tail->data);
+        tail = tail->back;
     }
 }
