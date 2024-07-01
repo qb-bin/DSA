@@ -36,7 +36,7 @@ void append(node *head, int data) {
     temp->next = NULL;
 }
 
-int MAX(node *head){
+int max(node *head){
     int max = head->data;
     while(head != NULL){
         if(head->data > max){
@@ -47,7 +47,7 @@ int MAX(node *head){
     return max;
 }
 
-int MIN(node *head){
+int min(node *head){
     int min = head->data;
     while(head != NULL){
         if(head->data < min){
@@ -58,7 +58,7 @@ int MIN(node *head){
     return min;
 }
 
-void print_forward(node *head) {
+void print(node *head) {
     while(head != NULL) {
       printf("%i\n", head->data);
       head = head->next;
