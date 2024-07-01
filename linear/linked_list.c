@@ -21,10 +21,5 @@ int free_list(node *head) {
         head = temp_ptr;
         tracker++;
     }
-    
     return tracker;
-}
-
-int main() {
-    return 0;
 }
