@@ -28,11 +28,11 @@ int free_list(node *head) {
     return tracker;
 }
 
-void append(node *head, int data) {
+void append(node *tail, int data) {
     node *temp =  new_node();
     temp->data = data;
-    temp->back = head;
-    head->next = temp;
+    temp->back = tail;
+    tail->next = temp;
     temp->next = NULL;
 }
 
