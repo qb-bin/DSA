@@ -80,5 +80,7 @@ void get(node *head,int index){
     if(cur == NULL){
         printf("index is out of range");
     }
-    printf("%d",cur->data);
+    else{
+        printf("%d",cur->data);
+    }
 }
