@@ -7,8 +7,12 @@ typedef struct NODE {
     struct NODe *back;
 } node;
 
-node* new_list() {
+node* new_node() {
     return (node *)malloc(sizeof(node));
+}
+
+node* new_list() {
+    return new_node();
 }
 
 int free_list(node *head) {
@@ -22,6 +26,14 @@ int free_list(node *head) {
         tracker++;
     }
     return tracker;
+}
+
+void append(node *head, int data) {
+    node *temp =  new_node();
+    temp->data = data;
+    temp->back = head;
+    head->next = temp;
+    temp->next = NULL;
 }
 
 int MAX(node *head){
