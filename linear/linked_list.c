@@ -6,6 +6,10 @@ typedef struct NODE {
     struct NODe *back;
 } node;
 
+node* new_list() {
+    return (node *)malloc(sizeof(node));
+}
+
 int main() {
     return 0;
 }
