@@ -71,3 +71,14 @@ void print_backward(node *tail) {
         tail = tail->back;
     }
 }
+
+void get(node *head,int index){
+    node *cur = head;
+    for(int i=0 ; i<index ; i++){
+        cur = cur->next;
+    }
+    if(cur == NULL){
+        printf("index is out of range");
+    }
+    printf("%d",cur->data);
+}
