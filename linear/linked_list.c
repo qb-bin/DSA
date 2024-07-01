@@ -84,3 +84,20 @@ void get(node *head,int index){
         printf("%d",cur->data);
     }
 }
+
+void search(node *head,int data){
+  int key = data;
+  int a=0;
+  node *cur= head;
+  while(cur != NULL){
+    if(cur->data == key){
+      printf("index: %d",a);
+      return;
+    }
+    cur = cur->next;
+    a++;
+  }
+  if(cur == NULL){
+      printf("given data is not found");
+  }
+}
